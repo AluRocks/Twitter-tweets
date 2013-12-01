@@ -1,0 +1,21 @@
+<h3 class="lead">Twitter Tweets</h3>
+<% @tweets[0..49].each do |tweet| %>
+  <div class="container">
+    <div class="row">
+      <div class="span6 bck-gd">
+        <div class="span4 pull-left blue" >
+          <%= tweet.user.name %>
+          <div class="pull-right grey">
+            <small><%= tweet.created_at.strftime("%b %m") %></small>
+          </div>
+        </div>
+        <div class="span4">
+          <%= tweet.text.html_safe %>
+        </div>
+        <div class="span4 blue" style="border-bottom: 1px solid #b8b8b8;">
+          <strong><%= tweet.user.screen_name %></strong>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

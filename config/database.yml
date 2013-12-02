@@ -10,7 +10,7 @@ development:
   database: tweets_clone_development
   pool: 5
   username: root
-  password: rudra
+  password: hackerstop
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -23,16 +23,7 @@ test:
   database: tweets_clone_test
   pool: 5
   username: root
-  password: rudra
+  password: hackerstop
   socket: /var/run/mysqld/mysqld.sock
 
-test:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
-  database: tweets_clone_prod
-  pool: 5
-  username: root
-  password: rudra
-  socket: /var/run/mysqld/mysqld.sock
 
